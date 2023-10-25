@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>COTIZADOR DE SEGUROS</title>
+    <link rel="stylesheet" href="visual.css">
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <div id="contenido" class="pb-10">
+        <header>
+          <h1>Cotiza tu seguro de Auto</h1>
+        </header>
+        <form action="#" id="cotizar-seguro">
+          <div>
+            <label for="marca">¿Con que te mueves?:</label>
+            <select id="marca">
+              <option value="">- Seleccionar -</option>
+              <option value="1">Moto</option>
+              <option value="2">Auto</option>
+              <option value="3">Scooter</option>
+            </select>
+          </div>
+          <div>
+            <label for="year">¿De que año es?:</label>
+            <select id="year"></select>
+          </div>
+          <fieldset>
+            <legend>¿Que seguro deseas?</legend>
+            <div>
+              <div>
+                <label>Básico<input type="radio" name="tipo" value="basico" checked></label>
+              </div>
+              <div>
+                <label>Completo<input type="radio" name="tipo" value="completo"></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div id="resultload"></div>
+
+
+          <div id="cargando" class="hidden">
+            <div class="spinner">
+              <div class="rect1"></div>
+              <div class="rect2"></div>
+              <div class="rect3"></div>
+              <div class="rect4"></div>
+              <div class="rect5"></div>
+          </div>
+      </div>
+      <div id="resultado"></div>
+          <div>
+            <button type="submit">Cotiza tu Seguro</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="cotizador.Js"></script>
+  </body>
+</html>
